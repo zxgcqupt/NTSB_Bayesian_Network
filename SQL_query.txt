@@ -1,0 +1,11 @@
+### SELECT UNIQUE events with FAR_Part 121
+SELECT DISTINCT ev_id FROM seq_of_events WHERE ev_id IN (SELECT ev_id FROM aircraft WHERE far_part = '121')
+
+
+### Query the event sequences for accidents after 2006
+SELECT * FROM Events_Sequence WHERE ev_id IN 
+(SELECT ev_id FROM aircraft WHERE far_part = '121');
+
+### Query the causes for accidents after 2006
+SELECT * FROM Findings WHERE ev_id IN 
+(SELECT ev_id FROM aircraft WHERE far_part = '121');
