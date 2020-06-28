@@ -5,5 +5,5 @@ The program here is used to generate a Bayesian network representing the event s
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the required packages.
 
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
