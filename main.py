@@ -13,7 +13,7 @@ import random
 
 import collections
 import matplotlib.pyplot as plt
-get_ipython().run_line_magic('matplotlib', 'inline')
+%matplotlib inline
 
 ## New - With the implementation of eADMS in 2006, the "Events_Sequence" table will replace the "Occurrences"
 ## table and the "Findings" table will replace the "Seq_of_events" table.
@@ -729,7 +729,7 @@ sample_ev_ID
 dictAircraftDamage = {'MINR': 'Minor', 'DEST': 'Destroyed', 'NONE': 'None', 'UNK': 'Unknown', 'SUBS': 'Substantial'}
 dictEdges = {}
 g1 = buildOneGraphRep(sample_ev_ID)
-drawImage(g1)
+#drawImage(g1)
 
 
 # #### Build the connections for all the accidents that happened before 2006
