@@ -13,7 +13,6 @@ import random
 
 import collections
 import matplotlib.pyplot as plt
-%matplotlib inline
 
 ## New - With the implementation of eADMS in 2006, the "Events_Sequence" table will replace the "Occurrences"
 ## table and the "Findings" table will replace the "Seq_of_events" table.
