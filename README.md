@@ -12,7 +12,17 @@ pip install -r requirements.txt
 
 Besides installing the necessary Python packages, the software [Graphviz](https://graphviz.org/) needs to be installed for generating graphs.
 
-## Citation
+## Reference
+```
+@article{zhang2020bn,
+  title={Bayesian network modeling of accident investigation reports for aviation safety assessment},
+  author={Zhang, Xiaoge and Mahadevan, Sankaran},
+  journal={Reliability Engineering & Systems Safety},
+  volume={Under Review},
+  year={2020},
+  publisher={Elsevier}
+}
+```
 
 
 
