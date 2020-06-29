@@ -3,7 +3,7 @@
 
 # ### Load accident data corresponding to far_part 121
 
-# In[90]:
+# In[1]:
 
 
 import pandas as pd
@@ -13,21 +13,22 @@ import random
 
 import collections
 import matplotlib.pyplot as plt
+get_ipython().run_line_magic('matplotlib', 'inline')
 
 ## New - With the implementation of eADMS in 2006, the "Events_Sequence" table will replace the "Occurrences"
 ## table and the "Findings" table will replace the "Seq_of_events" table.
 
-Events_Sequence = pd.read_csv('Events_Sequence.txt', sep = '\t')  ## eADMS coding for accidents after 2006
-aircraft = pd.read_excel('aircraft.xlsx')
-occurrences = pd.read_csv('Occurrences.txt', sep = ',')
-seq_of_events_ = pd.read_csv('seq_of_events.txt', sep = '\t') ## pre eADMS coding for accidents before 2006
+Events_Sequence = pd.read_csv('./data/Events_Sequence.txt', sep = '\t')  ## eADMS coding for accidents after 2006
+aircraft = pd.read_excel('./data/aircraft.xlsx')
+occurrences = pd.read_csv('./data/Occurrences.txt', sep = ',')
+seq_of_events_ = pd.read_csv('./data/seq_of_events.txt', sep = '\t') ## pre eADMS coding for accidents before 2006
 
-narratives = pd.read_excel('narratives.xlsx')
-metaData = pd.read_excel('metaData.xlsx')
-events = pd.read_excel('events.xlsx')
-engines = pd.read_excel('engines.xlsx')
-injury = pd.read_excel('injury.xlsx')
-findings = pd.read_excel('findings.xlsx')
+narratives = pd.read_excel('./data/narratives.xlsx')
+metaData = pd.read_excel('./data/metaData.xlsx')
+events = pd.read_excel('./data/events.xlsx')
+engines = pd.read_excel('./data/engines.xlsx')
+injury = pd.read_excel('./data/injury.xlsx')
+findings = pd.read_excel('./data/findings.xlsx')
 
 
 # #### show basic events info
@@ -728,7 +729,7 @@ sample_ev_ID
 dictAircraftDamage = {'MINR': 'Minor', 'DEST': 'Destroyed', 'NONE': 'None', 'UNK': 'Unknown', 'SUBS': 'Substantial'}
 dictEdges = {}
 g1 = buildOneGraphRep(sample_ev_ID)
-#drawImage(g1)
+drawImage(g1)
 
 
 # #### Build the connections for all the accidents that happened before 2006
@@ -962,7 +963,7 @@ def searchThreshold(parentInfo):
 # In[278]:
 
 
-departures = pd.read_excel('table_01_37_061019.xlsx')
+departures = pd.read_excel('./data/table_01_37_061019.xlsx')
 departures.drop(departures.columns[0], axis=1, inplace= True)
 
 
@@ -1309,6 +1310,5 @@ XDSL += '\n</smile>'
 file = open("NTSB.xdsl","w")
 file.write(XDSL)
 
-
-
+#print (XDSL)
 
