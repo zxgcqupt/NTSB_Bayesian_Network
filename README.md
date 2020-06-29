@@ -13,6 +13,7 @@ pip install -r requirements.txt
 ```
 
 Besides installing the necessary Python packages, the software [Graphviz](https://graphviz.org/) needs to be installed for generating graphs. If you'd like to disable the function for generating graphs with Graphviz, you can comment the following code at line 731 of the script main.py.
+
 `drawImage(g1)`
 
 ## Reference
