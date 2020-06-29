@@ -17,6 +17,7 @@ Besides installing the necessary Python packages, the software [Graphviz](https:
 `drawImage(g1)`
 
 ## Reference
+If you find our program useful for your work, we kindly request that you cite the following work. 
 ```
 @article{zhang2020bn,
   title={Bayesian network modeling of accident investigation reports for aviation safety assessment},
