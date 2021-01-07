@@ -24,8 +24,8 @@ If you find our program useful for your work, we kindly request that you cite th
   title={Bayesian network modeling of accident investigation reports for aviation safety assessment},
   author={Zhang, Xiaoge and Mahadevan, Sankaran},
   journal={Reliability Engineering & Systems Safety},
-  volume={Under Review},
-  year={2020},
+  volume={107371},
+  year={2021},
   publisher={Elsevier}
 }
 ```
